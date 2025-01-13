@@ -1,30 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>digai.co</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            height: 85vh;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
-            font-family: "Microsoft YaHei", sans-serif;
-            color: #0073e6;
-        }
-        a:visited {
-            color: #0073e6;
-        }
-    </style>
-</head>
-<body>
-    <img src="./digai.png" alt="digai" width="50%">
-    <a href="https://github.com/digai-co/datagpt" target="_blank" rel="noopener noreferrer">[ DataGPT ]</a>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>digai.co</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center; /* 保持垂直居中 */
+                height: 85vh;
+                margin: 0;
+                flex-direction: column; /* 用于兼容其他设备上的排列，特别是移动端 */
+            }
+            .link-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px; /* 创建链接之间的间隔 */
+            }
+            a {
+                text-decoration: none;
+                font-family: "Microsoft YaHei", sans-serif;
+                color: #0073e6;
+            }
+            a:visited {
+                color: #0073e6;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="./digai.png" alt="digai" width="50%" />
+        <div class="link-container">
+            <a
+                href="https://github.com/digai-co/datagpt"
+                target="_blank"
+                rel="noopener noreferrer"
+                >[ DataGPT ]</a
+            >
+            <a
+                href="https://aigc.digai.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                >[ AIGC ]</a
+            >
+            <a
+                href="https://www.digtech.com.cn"
+                target="_blank"
+                rel="noopener noreferrer"
+                >[ DigTech ]</a
+            >
+        </div>
+    </body>
 </html>
